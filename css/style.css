@@ -1,7 +1,25 @@
+.wrapper {
+    width: 1280px;
+    margin: 0 auto;
+}
 
+.menu {
+    display: flex;
+    background-color: blue;
+    height: 26px;
+}
 
+.menu a {
+    color: #75beff;
+    text-decoration: none;
+    vertical-align: middle
+}
 
+.menu > li > span {
+    color: #ffffff;
+}
 
-.icon-flag:before {
-    content: "\f024";
+.line a {
+    text-decoration: underline;
+    color: #fff;
 }
