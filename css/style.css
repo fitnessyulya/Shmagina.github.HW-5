@@ -1,25 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
 .wrapper {
-    width: 1280px;
+    width: 1215px;
     margin: 0 auto;
 }
 
 .menu {
     display: flex;
-    background-color: blue;
-    height: 26px;
+    justify-content: flex-end;
+    background-color: #08599d;
+    height: 36px;
+    align-items: center;
 }
 
 .menu a {
+    display: inline-block;
     color: #75beff;
     text-decoration: none;
-    vertical-align: middle
+    vertical-align: middle;
+    line-height: 36px;
 }
 
-.menu > li > span {
-    color: #ffffff;
+.menu span {
+    display: inline-block;
+    vertical-align: middle;
+    color: #fefefe;
+    height: 36px;
+
 }
 
 .line a {
+    display: inline-block;
     text-decoration: underline;
+    color: #fefefe;
+    height: 36px;
+}
+
+.menu li {
+    padding: 0 10px;
+    font-size: 12px;
+ }
+
+.menu li:hover {
+    background-color: #4eabda;
+ }
+
+.menu a:hover {
     color: #fff;
+}
+
+.line {
+    margin-right: 20px;
+    background: linear-gradient(#00B6D9, #007DC2);
+    border: 1px solid #4299d2;
+    border-top: 0;
+    line-height: 35px;
+}
+
+.flag a {
+    color: #fefefe;
+}
+
+.flag a:before {
+    background-image: url(../img/flag.png);
 }
