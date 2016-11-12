@@ -4,13 +4,14 @@
 
 .wrapper {
     width: 1215px;
+    height: auto;
     margin: 0 auto;
 }
 
 .menu {
     display: flex;
     justify-content: flex-end;
-    background-color: #08599d;
+    background: url(../img/background-menu.png) repeat;
     height: 36px;
     align-items: center;
 }
@@ -27,19 +28,21 @@
     display: inline-block;
     vertical-align: middle;
     color: #fefefe;
-    height: 36px;
+    height: 34px;
 
 }
 
-.line a {
+.right_block a {
     display: inline-block;
     text-decoration: underline;
     color: #fefefe;
-    height: 36px;
+    height: 34px;
+    width: auto;
 }
 
 .menu li {
     padding: 0 10px;
+    width: auto;
     font-size: 12px;
  }
 
@@ -51,18 +54,109 @@
     color: #fff;
 }
 
-.line {
+.right_block {
     margin-right: 20px;
     background: linear-gradient(#00B6D9, #007DC2);
     border: 1px solid #4299d2;
     border-top: 0;
-    line-height: 35px;
+    line-height: 33px;
 }
 
 .flag a {
+    display: inline-block;
+    text-align: end;
     color: #fefefe;
+    width: 100px;
+    height: 36px;
 }
 
-.flag a:before {
-    background-image: url(../img/flag.png);
+.flag {
+    background: url(../img/flag.png) no-repeat;
+    background-position: 22px 7px;
 }
+
+.menu .flag {
+    padding-left: 30px;
+}
+
+main {
+    background-image: url("../img/Background.png");
+    height: 1028px;
+}
+
+.top_menu {
+    width: 560px;
+    height: 62px;
+    background: rgba(0, 0, 0, 0.36);
+    color: #fff;
+    margin-bottom: 2px;
+    text-align: center;
+    line-height: 62px;
+    font-size: 24px;
+}
+
+section {
+    width: 560px;
+    height: 549px;
+    background: rgba(0, 0, 0, 0.36);
+    color: #fff;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    background: url(../img/line.png) no-repeat;
+    background-position: center right;
+}
+
+.menu .line {
+    padding-right: 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 386px;
+    justify-content: space-around;
+}
+.ou:before {
+    content: "";
+    width: 150px;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #000;
+}
+
+.ou:after {
+
+}
+
+button {
+    height: 35px;
+    width: 275px;
+    font-weight: 600;
+    color: #fff;
+    background: rgba(57,86,146,1);
+}
+
+
+form > input {
+    height: 35px;
+    width: 275px;
+    background: rgba(17,17,17,1);
+}
+
+
