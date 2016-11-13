@@ -212,7 +212,7 @@ input[type=password] {
     border-bottom: 1px solid #474747;
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari selector with prefix*/
+::-webkit-input-placeholder {
     text-indent: 20px;
 }
 
