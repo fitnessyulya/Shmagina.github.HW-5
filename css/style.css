@@ -1,5 +1,17 @@
+@font-face {
+    font-family: 'Helvetica Neue Regular';
+    src: url('fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+    url('fonts/helveticaneue-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue Regular', sans-serif;
 }
 
 .wrapper {
@@ -28,8 +40,7 @@
     display: inline-block;
     vertical-align: middle;
     color: #fefefe;
-    height: 34px;
-
+    height: 30px;
 }
 
 .right_block a {
@@ -133,30 +144,105 @@ form {
     height: 386px;
     justify-content: space-around;
 }
+
+p {
+    color: #999;
+}
+
 .ou:before {
+    display: inline-block;
     content: "";
-    width: 150px;
+    width: 123px;
     border-top: 1px solid #666;
     border-bottom: 1px solid #000;
 }
 
 .ou:after {
-
+    display: inline-block;
+    content: "";
+    width: 122px;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #000;
 }
 
-button {
-    height: 35px;
+.fb-button {
     width: 275px;
-    font-weight: 600;
-    color: #fff;
-    background: rgba(57,86,146,1);
+    height: 32px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(#255793, #283F67);
+    display: flex;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    border-top: 1px solid #376AA7;
 }
 
+.fb-button span {
+    display: inline-block;
+}
 
-form > input {
+.fb-button-f-part {
+    width: 35px;
+    float: left;
+    font-size: 25px;
+    font-weight: 600;
+    border-right: 1px solid #003A71;
+}
+
+.fb-button-login-part {
+    font-weight: 600;
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+input[type=text] {
     height: 35px;
     width: 275px;
     background: rgba(17,17,17,1);
+    border: none;
+    border-bottom: 1px solid #474747;
 }
 
+input[type=password] {
+    height: 35px;
+    width: 275px;
+    background: rgba(17,17,17,1);
+    border: none;
+    border-bottom: 1px solid #474747;
+}
 
+::-webkit-input-placeholder { /* Chrome/Opera/Safari selector with prefix*/
+    text-indent: 20px;
+}
+
+input[type=text]:focus {
+    background-color: #005387;
+    border-bottom: 1px solid #689bcc;
+    box-shadow: inset 1px 1px 22px 3px rgba(30,75,118,0.85), 1px 1px 27px 3px rgba(64,124,167,1);
+}
+
+input[type=password]:focus {
+    background-color: #005387;
+    border-bottom: 1px solid #689bcc;
+    box-shadow: inset 1px 1px 22px 3px rgba(30,75,118,0.85), 1px 1px 27px 3px rgba(64,124,167,1);
+}
+
+input[type=submit] {
+    height: 35px;
+    width: 151px;
+    background: linear-gradient(to bottom, rgba(80,174,219,1) 0%, rgba(46,122,196,1) 50%, rgba(46,122,196,1) 62%, rgba(46,122,196,1) 78%, rgba(46,122,196,1) 100%);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.link {
+    text-align: center;
+    text-decoration: none;
+}
+
+.link a{
+    text-decoration: none;
+    color: #999;
+}
